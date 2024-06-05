@@ -14,3 +14,17 @@ package relies on Python 3 Matplotlib plotting and movie animations
 using the and `matplotlib.animation`
 libraries.  This package uses mpeg as a back end renderer to create
 the rendered animations.
+
+
+## Development
+
+Install `ffmpeg` using your system package manager, e.g.
+`sudo apt install ffmpeg` on Ubuntu  
+`brew install ffmpeg` on MacOS (with [homebrew](https://brew.sh/))
+
+
+1. `git clone https://github.com/DerekHarter/motionrender`
+2. `cd motionrender`
+3. `pip install -r requirements-dev.txt`
+4. `pip install -e .` Install in dev mode so changes are automatically updated
+5. `pytest` to run all tests or `pytest -k testname ` to run a specific test

@@ -4,6 +4,9 @@ VERSION = '1.0.0'
 DESCRIPTION = 'A motion tracking 3D movier render'
 LONG_DESCRIPTION = 'A package that renders movies from 3D motion tracked data, for example from 3D skeleton joint tracking data'
 
+with open("requirements.txt") as f:
+    requirements = f.read().splitlines()
+
 setup(
     name="motionrender",
     version=VERSION,
@@ -13,7 +16,7 @@ setup(
     author_email="Derek.Harter@tamuc.edu",
     license='GPL-3',
     packages=find_packages(),
-    install_requires=[],
+    install_requires=requirements,
     keywords='motion tracking, 3D rendering',
     classifiers= [
         "Development Status :: 3 - Alpha",
